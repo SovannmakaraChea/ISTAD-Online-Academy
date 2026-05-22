@@ -14,60 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-  <style>
-    html {
-        scroll-behavior: smooth;
-    }
-    #right {
-        animation: scrolling linear;
-        animation-timeline: view();
-        animation-range: entry 0% cover 30%;
-    }
-    #about, #left {
-        animation: scrolling2 linear;
-        animation-timeline: view();
-        animation-range: entry 0% cover 30%;
-    }
-    #course, #middle {
-        animation: scrolling3 linear;
-        animation-timeline: view();
-        animation-range: entry 0% cover 30%;
-    }
-    #main, #about, #Contact {
-        scroll-margin-top: 100px;
-    }
-    
-    @keyframes scrolling {
-            from {
-                opacity: 0;
-                transform: translateX(-150px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0px);
-            }
-    }
-    @keyframes scrolling2 {
-            from {
-                opacity: 0;
-                transform: translateX(150px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0px);
-            }
-    }
-    @keyframes scrolling3 {
-        from {
-            opacity: 0;
-            scale: 0.5;
-        }
-        to {
-            opacity: 1;
-            scale: 1;
-        }
-    }
-  </style>
+
   <script>
     // Apply saved theme BEFORE page loads
     if (localStorage.getItem('theme') === 'dark') {
@@ -159,7 +106,7 @@
                         </a>
                         
                     </div>
-                    <div class="hidden md:flex items-center space-x-16 ml-auto">
+                    <div class="hidden md:flex items-center space-x-3 ml-auto">
                         <button onclick="toggleDarkMode()"
                             class="hidden md:flex m-0 h-12 w-12 rounded-lg p-2 transition cursor-pointer relative group">
 
@@ -173,7 +120,7 @@
                             <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"/>
                             </svg>
                         </button>
-                        <a href="./html/login.html" class="bg-white/15 text-black font-bold py-3 px-5 m-2 rounded-lg hover:bg-indigo-700 hover:text-white hover:shadow-2xl hover:scale-90 transition duration-300 cursor-pointer dark:text-white relative group">
+                        <a href="./html/login.html" class="bg-white/15 text-black font-bold py-3 px-5 rounded-lg hover:bg-indigo-700 hover:text-white hover:shadow-2xl hover:scale-90 transition duration-300 cursor-pointer dark:text-white relative group">
                             Login   
                             <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
                         </a>
