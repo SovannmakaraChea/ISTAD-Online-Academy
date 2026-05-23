@@ -16,8 +16,8 @@
     --color-blue-800: oklch(42.4% 0.199 265.638);
     --color-indigo-700: oklch(45.7% 0.24 277.023);
     --color-violet-700: oklch(49.1% 0.27 292.581);
-    --color-purple-500: oklch(62.7% 0.265 303.9);
-    --color-purple-600: oklch(55.8% 0.288 302.321);
+    --color-white-500: oklch(97.58% 0.00577 307.732);
+    --color-white-600: oklch(97.521% 0.01023 310.782);
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-300: oklch(87.2% 0.01 258.338);
@@ -147,7 +147,6 @@
   }
   img, svg, video, canvas, audio, iframe, embed, object {
     display: block;
-    vertical-align: middle;
   }
   img, video {
     max-width: 100%;
@@ -325,6 +324,9 @@
   }
   .mt-32 {
     margin-top: calc(var(--spacing) * 32);
+  }
+  .mt-40 {
+    margin-top: calc(var(--spacing) * 40);
   }
   .mt-50 {
     margin-top: calc(var(--spacing) * 50);
@@ -715,8 +717,8 @@
   .py-6 {
     padding-block: calc(var(--spacing) * 6);
   }
-  .py-32 {
-    padding-block: calc(var(--spacing) * 32);
+  .py-40 {
+    padding-block: calc(var(--spacing) * 40);
   }
   .pe-32 {
     padding-inline-end: calc(var(--spacing) * 32);
